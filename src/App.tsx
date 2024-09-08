@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './music-vine-logo.png';
+import needle from './needle-2.png'
 import './App.css';
+import MusicCards from './components/MusicCards/MusicCards';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className='app-logo-vinyl'><img className='needle' src={needle} alt='needle'/><div><img src={logo} className="App-logo" alt="logo" /></div></div>
+        
+        
       </header>
+      <body className='App-body'>
+      <MusicCards />
+      </body>
     </div>
   );
 }
